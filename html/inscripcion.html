@@ -4,18 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Inscripción | Corriendo por salud</title>
-  <link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="../css/estilos.css?v=7">
+  <link rel="stylesheet" href="../css/estilos.css?v=12">
 </head>
 <body>
 
   <header>
-    <nav class="navbar navbar-expand-lg menu" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg menu">
       <div class="container">
-        <a class="navbar-brand" href="index.html"><i class="fa-solid fa-heart-pulse"></i> Corriendo por salud</a>
+        <a class="navbar-brand" href="index.html">Corriendo por salud</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -25,8 +23,8 @@
             <li class="nav-item"><a class="nav-link" href="entrenamiento.html">Entrenamiento</a></li>
             <li class="nav-item"><a class="nav-link" href="carreras.html">Carreras</a></li>
             <li class="nav-item"><a class="nav-link" href="consejos.html">Consejos</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="inscripcion.html">Inscripción</a></li>
           </ul>
-          <a class="btn btn-rojo ms-lg-3 my-2 my-lg-0" href="inscripcion.html">Inscríbete</a>
         </div>
       </div>
     </nav>
@@ -34,68 +32,46 @@
 
   <main>
 
-    <section class="encabezado encabezado-inscripcion">
-      <div class="container">
-        <h1>Inscripción</h1>
-        <p class="mb-0">Llena tus datos y te contactamos para darte tu plan.</p>
-      </div>
-    </section>
-
     <section class="seccion">
       <div class="container">
+        <h1>Inscripción</h1>
+        <p>Llena el formulario para unirte al grupo.</p>
+
         <div class="row">
-
-          <div class="col-12 col-lg-8 mb-4">
-            <form id="formInscripcion" class="card p-4" novalidate>
-              <h2 class="h4 mb-3">Tus datos</h2>
-
-              <div class="row">
-                <div class="col-12 mb-3">
-                  <label for="nombre" class="form-label">Nombre completo</label>
-                  <input type="text" class="form-control" id="nombre" placeholder="Ej. Ana López" required minlength="5">
-                  <div class="invalid-feedback"></div>
-                </div>
-                <div class="col-12 col-md-6 mb-3">
-                  <label for="correo" class="form-label">Correo electrónico</label>
-                  <input type="email" class="form-control" id="correo" placeholder="nombre@correo.com" required>
-                  <div class="invalid-feedback"></div>
-                </div>
-                <div class="col-12 col-md-6 mb-3">
-                  <label for="telefono" class="form-label">Teléfono</label>
-                  <input type="tel" class="form-control" id="telefono" placeholder="10 números" required pattern="[0-9]{10}" maxlength="10">
-                  <div class="invalid-feedback"></div>
-                </div>
-                <div class="col-12 col-md-6 mb-3">
-                  <label for="nacimiento" class="form-label">Fecha de nacimiento</label>
-                  <input type="date" class="form-control" id="nacimiento" required>
-                  <div class="invalid-feedback"></div>
-                </div>
-                <div class="col-12 col-md-6 mb-3">
-                  <label for="talla" class="form-label">Talla de playera</label>
-                  <select class="form-select" id="talla" required>
-                    <option value="">Selecciona...</option>
-                    <option value="CH">Chica</option>
-                    <option value="M">Mediana</option>
-                    <option value="G">Grande</option>
-                    <option value="XG">Extra grande</option>
-                  </select>
-                  <div class="invalid-feedback"></div>
-                </div>
-                <div class="col-12 mb-3">
-                  <label for="distancia" class="form-label">¿Qué distancia quieres preparar?</label>
-                  <select class="form-select" id="distancia" required>
-                    <option value="">Selecciona...</option>
-                    <option value="5K">5K</option>
-                    <option value="10K">10K</option>
-                    <option value="21K">21K</option>
-                    <option value="42K">42K</option>
-                  </select>
-                  <div class="invalid-feedback"></div>
-                </div>
+          <div class="col-12 col-lg-8">
+            <form id="formInscripcion" novalidate>
+              <div class="mb-3">
+                <label for="nombre" class="form-label">Nombre completo</label>
+                <input type="text" class="form-control" id="nombre" required minlength="5">
+                <div class="invalid-feedback"></div>
               </div>
 
-              <p class="form-label mb-1">Tu nivel</p>
               <div class="mb-3">
+                <label for="correo" class="form-label">Correo</label>
+                <input type="email" class="form-control" id="correo" required>
+                <div class="invalid-feedback"></div>
+              </div>
+
+              <div class="mb-3">
+                <label for="telefono" class="form-label">Teléfono</label>
+                <input type="tel" class="form-control" id="telefono" required pattern="[0-9]{10}" maxlength="10">
+                <div class="invalid-feedback"></div>
+              </div>
+
+              <div class="mb-3">
+                <label for="distancia" class="form-label">Distancia</label>
+                <select class="form-select" id="distancia" required>
+                  <option value="">Selecciona...</option>
+                  <option value="5K">5K</option>
+                  <option value="10K">10K</option>
+                  <option value="21K">21K</option>
+                  <option value="42K">42K</option>
+                </select>
+                <div class="invalid-feedback"></div>
+              </div>
+
+              <div class="mb-3">
+                <p class="mb-1">Nivel</p>
                 <div class="form-check form-check-inline">
                   <input class="form-check-input" type="radio" name="nivel" id="nivel1" value="principiante" required>
                   <label class="form-check-label" for="nivel1">Principiante</label>
@@ -113,47 +89,27 @@
 
               <div class="mb-3">
                 <label for="objetivo" class="form-label">¿Por qué quieres correr?</label>
-                <textarea class="form-control" id="objetivo" rows="3" placeholder="Cuéntanos tu meta" required minlength="10" maxlength="300"></textarea>
+                <textarea class="form-control" id="objetivo" rows="3" required minlength="10"></textarea>
                 <div class="invalid-feedback"></div>
-                <small><span id="contadorLetras">0</span>/300 letras</small>
               </div>
 
               <div class="form-check mb-3">
                 <input class="form-check-input" type="checkbox" id="terminos" required>
-                <label class="form-check-label" for="terminos">Acepto el reglamento del club</label>
+                <label class="form-check-label" for="terminos">Acepto el reglamento</label>
                 <div class="invalid-feedback"></div>
               </div>
 
-              <button type="submit" class="btn btn-rojo btn-lg w-100">Enviar inscripción</button>
+              <button type="submit" class="btn btn-rojo">Enviar</button>
             </form>
           </div>
-
-          <aside class="col-12 col-lg-4">
-            <div class="card p-4">
-              <h2 class="h5">Tu inscripción incluye</h2>
-              <ul class="list-unstyled mb-0">
-                <li class="mb-2"><i class="fa-solid fa-check texto-rojo me-2"></i>Plan de entrenamiento</li>
-                <li class="mb-2"><i class="fa-solid fa-check texto-rojo me-2"></i>Salidas en grupo</li>
-                <li class="mb-2"><i class="fa-solid fa-check texto-rojo me-2"></i>Playera del club</li>
-                <li class="mb-2"><i class="fa-solid fa-check texto-rojo me-2"></i>Número de corredor</li>
-              </ul>
-            </div>
-          </aside>
-
         </div>
       </div>
     </section>
 
   </main>
 
-  <footer class="pie">
-    <div class="container">
-      <p class="mb-0">© 2026 Corriendo por salud</p>
-    </div>
-  </footer>
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.12.4/dist/sweetalert2.all.min.js"></script>
-  <script src="../js/funtion.js?v=7"></script>
+  <script src="../js/funtion.js?v=12"></script>
 </body>
 </html>

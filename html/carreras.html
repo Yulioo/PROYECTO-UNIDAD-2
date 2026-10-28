@@ -4,18 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Carreras | Corriendo por salud</title>
-  <link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <link rel="stylesheet" href="../css/estilos.css?v=7">
+  <link rel="stylesheet" href="../css/estilos.css?v=12">
 </head>
 <body>
 
   <header>
-    <nav class="navbar navbar-expand-lg menu" data-bs-theme="dark">
+    <nav class="navbar navbar-expand-lg menu">
       <div class="container">
-        <a class="navbar-brand" href="index.html"><i class="fa-solid fa-heart-pulse"></i> Corriendo por salud</a>
+        <a class="navbar-brand" href="index.html">Corriendo por salud</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
           <span class="navbar-toggler-icon"></span>
         </button>
@@ -25,8 +23,8 @@
             <li class="nav-item"><a class="nav-link" href="entrenamiento.html">Entrenamiento</a></li>
             <li class="nav-item"><a class="nav-link active" aria-current="page" href="carreras.html">Carreras</a></li>
             <li class="nav-item"><a class="nav-link" href="consejos.html">Consejos</a></li>
+            <li class="nav-item"><a class="nav-link" href="inscripcion.html">Inscripción</a></li>
           </ul>
-          <a class="btn btn-rojo ms-lg-3 my-2 my-lg-0" href="inscripcion.html">Inscríbete</a>
         </div>
       </div>
     </nav>
@@ -34,56 +32,42 @@
 
   <main>
 
-    <section class="encabezado encabezado-carreras">
-      <div class="container">
-        <h1>Carreras</h1>
-        <p class="mb-0">Carreras de la temporada a las que vamos como club.</p>
-      </div>
-    </section>
-
     <section class="seccion">
       <div class="container">
+        <h1>Carreras</h1>
+        <p>Carreras a las que vamos como grupo. Puedes filtrarlas por distancia.</p>
 
-        <p class="mb-2">Filtrar por distancia:</p>
-        <div class="d-flex flex-wrap gap-2 mb-4">
-          <button class="btn btn-outline-dark filtro active" type="button" data-filtro="todas">Todas</button>
-          <button class="btn btn-outline-dark filtro" type="button" data-filtro="5k">5K</button>
-          <button class="btn btn-outline-dark filtro" type="button" data-filtro="10k">10K</button>
-          <button class="btn btn-outline-dark filtro" type="button" data-filtro="21k">21K</button>
-          <button class="btn btn-outline-dark filtro" type="button" data-filtro="42k">42K</button>
+        <div class="d-flex flex-wrap gap-2 mb-3">
+          <button class="btn btn-outline-primary filtro active" type="button" data-filtro="todas">Todas</button>
+          <button class="btn btn-outline-primary filtro" type="button" data-filtro="5k">5K</button>
+          <button class="btn btn-outline-primary filtro" type="button" data-filtro="10k">10K</button>
+          <button class="btn btn-outline-primary filtro" type="button" data-filtro="21k">21K</button>
+          <button class="btn btn-outline-primary filtro" type="button" data-filtro="42k">42K</button>
         </div>
 
         <div class="table-responsive">
-          <table class="table table-hover align-middle">
-            <thead class="table-light">
-              <tr><th>Fecha</th><th>Carrera</th><th>Lugar</th><th>Distancia</th><th>Costo</th></tr>
+          <table class="table table-bordered">
+            <thead>
+              <tr><th>Fecha</th><th>Carrera</th><th>Lugar</th><th>Distancia</th></tr>
             </thead>
             <tbody>
-              <tr class="carrera" data-distancia="5k"><td>15 nov</td><td>5K Amanecer en el Parque</td><td>Parque Central</td><td>5K</td><td>$250</td></tr>
-              <tr class="carrera" data-distancia="10k"><td>29 nov</td><td>10K Ruta del Malecón</td><td>Malecón</td><td>10K</td><td>$350</td></tr>
-              <tr class="carrera" data-distancia="21k"><td>12 dic</td><td>Medio Maratón Nocturno</td><td>Centro</td><td>21K</td><td>$550</td></tr>
-              <tr class="carrera" data-distancia="5k"><td>10 ene</td><td>5K Carrera de Reyes</td><td>Plaza Principal</td><td>5K</td><td>$200</td></tr>
-              <tr class="carrera" data-distancia="21k"><td>7 feb</td><td>Trail Cerro Verde</td><td>Cerro Verde</td><td>21K</td><td>$600</td></tr>
-              <tr class="carrera" data-distancia="10k"><td>28 feb</td><td>10K de la Presa</td><td>Presa Municipal</td><td>10K</td><td>$380</td></tr>
-              <tr class="carrera" data-distancia="42k"><td>21 mar</td><td>Maratón de la Ciudad</td><td>Estadio</td><td>42K</td><td>$950</td></tr>
-              <tr class="carrera" data-distancia="42k"><td>25 abr</td><td>Maratón de Primavera</td><td>Av. Reforma</td><td>42K</td><td>$900</td></tr>
+              <tr class="carrera" data-distancia="5k"><td>15 nov</td><td>5K del Parque</td><td>Parque Central</td><td>5K</td></tr>
+              <tr class="carrera" data-distancia="10k"><td>29 nov</td><td>10K del Malecón</td><td>Malecón</td><td>10K</td></tr>
+              <tr class="carrera" data-distancia="21k"><td>12 dic</td><td>Medio Maratón Nocturno</td><td>Centro</td><td>21K</td></tr>
+              <tr class="carrera" data-distancia="5k"><td>10 ene</td><td>5K de Reyes</td><td>Plaza Principal</td><td>5K</td></tr>
+              <tr class="carrera" data-distancia="10k"><td>28 feb</td><td>10K de la Presa</td><td>Presa Municipal</td><td>10K</td></tr>
+              <tr class="carrera" data-distancia="42k"><td>21 mar</td><td>Maratón de la Ciudad</td><td>Estadio</td><td>42K</td></tr>
             </tbody>
           </table>
         </div>
 
-        <p class="mb-0">Si quieres ir a alguna carrera con el grupo, avísanos en la salida del domingo.</p>
+        <img src="../img/grupo-mujeres.jpg" alt="Corredoras del grupo durante una carrera" class="img-fluid rounded mt-3">
       </div>
     </section>
 
   </main>
 
-  <footer class="pie">
-    <div class="container">
-      <p class="mb-0">© 2026 Corriendo por salud</p>
-    </div>
-  </footer>
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="../js/funtion.js?v=7"></script>
+  <script src="../js/funtion.js?v=12"></script>
 </body>
 </html>

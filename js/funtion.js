@@ -34,13 +34,6 @@ function marcarCorrecto(campo) {
 }
 
 if (formulario) {
-  const objetivo = document.querySelector("#objetivo");
-  const contador = document.querySelector("#contadorLetras");
-
-  objetivo.addEventListener("input", function () {
-    contador.textContent = objetivo.value.length;
-  });
-
   formulario.addEventListener("submit", function (e) {
     e.preventDefault();
 
@@ -49,15 +42,14 @@ if (formulario) {
     const nombre = document.querySelector("#nombre");
     const correo = document.querySelector("#correo");
     const telefono = document.querySelector("#telefono");
-    const nacimiento = document.querySelector("#nacimiento");
-    const talla = document.querySelector("#talla");
     const distancia = document.querySelector("#distancia");
     const nivel = document.querySelector('input[name="nivel"]:checked');
     const errorNivel = document.querySelector("#errorNivel");
+    const objetivo = document.querySelector("#objetivo");
     const terminos = document.querySelector("#terminos");
 
     if (nombre.value.trim().length < 5) {
-      mostrarError(nombre, "Escribe tu nombre y apellido.");
+      mostrarError(nombre, "Escribe tu nombre completo.");
       valido = false;
     } else {
       marcarCorrecto(nombre);
@@ -75,26 +67,6 @@ if (formulario) {
       valido = false;
     } else {
       marcarCorrecto(telefono);
-    }
-
-    if (nacimiento.value === "") {
-      mostrarError(nacimiento, "Elige tu fecha de nacimiento.");
-      valido = false;
-    } else {
-      const edad = new Date().getFullYear() - new Date(nacimiento.value).getFullYear();
-      if (edad < 15) {
-        mostrarError(nacimiento, "Debes tener al menos 15 años.");
-        valido = false;
-      } else {
-        marcarCorrecto(nacimiento);
-      }
-    }
-
-    if (talla.value === "") {
-      mostrarError(talla, "Elige tu talla.");
-      valido = false;
-    } else {
-      marcarCorrecto(talla);
     }
 
     if (distancia.value === "") {
@@ -145,11 +117,10 @@ if (formulario) {
     Swal.fire({
       icon: "success",
       title: "¡Inscripción enviada!",
-      text: "Bienvenido al club, " + nombre.value + "."
+      text: "Bienvenido al grupo, " + nombre.value + "."
     });
 
     formulario.reset();
-    contador.textContent = "0";
     document.querySelectorAll(".is-valid").forEach(function (campo) {
       campo.classList.remove("is-valid");
     });
