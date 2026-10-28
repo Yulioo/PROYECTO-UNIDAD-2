@@ -1,0 +1,179 @@
+:root {
+  --blanco: #ffffff;
+  --azul: #1f3b8f;
+  --rojo: #c41e1e;
+  --gris: #f2f2f2;
+}
+
+* {
+  transition: none !important;
+  animation: none !important;
+}
+
+body {
+  background-color: var(--blanco);
+  color: #1b1b1b;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  color: var(--azul);
+}
+
+h1, h2, h3 {
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+.seccion {
+  padding: 60px 0;
+}
+
+.fondo-gris {
+  background-color: var(--gris);
+}
+
+.banda-azul {
+  background-color: var(--azul);
+  color: var(--blanco);
+}
+
+.texto-rojo {
+  color: var(--rojo);
+}
+
+.btn-rojo {
+  background-color: var(--rojo);
+  color: var(--blanco);
+  border: none;
+  padding: 10px 30px;
+}
+
+.btn-rojo:hover {
+  background-color: #a01818;
+  color: var(--blanco);
+}
+
+.menu {
+  background-color: var(--azul);
+}
+
+.menu .navbar-brand {
+  font-weight: 700;
+  color: var(--blanco);
+}
+
+.menu .nav-link {
+  color: var(--blanco);
+}
+
+.menu .nav-link.active {
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.portada {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/grupo-carrera.jpg");
+  background-size: cover;
+  background-position: center;
+  color: var(--blanco);
+  padding: 90px 0;
+}
+
+.portada h1 {
+  font-size: 2.4rem;
+}
+
+.encabezado {
+  background-size: cover;
+  background-position: center;
+  color: var(--blanco);
+  padding: 60px 0;
+}
+
+.encabezado-entrenamiento {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/corredor.webp");
+}
+
+.encabezado-carreras {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/grupo-carrera.jpg");
+}
+
+.encabezado-consejos {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/grupo-mujeres.jpg");
+}
+
+.encabezado-inscripcion {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../img/grupo-mujeres.jpg");
+}
+
+.foto {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.insignia {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background-color: var(--rojo);
+  color: var(--blanco);
+  font-size: 1.6rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 10px;
+}
+
+.caja {
+  background-color: var(--blanco);
+  border-top: 4px solid var(--rojo);
+  padding: 20px;
+  height: 100%;
+}
+
+.nav-tabs .nav-link {
+  color: #1b1b1b;
+}
+
+.nav-tabs .nav-link.active {
+  color: var(--rojo);
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: var(--azul);
+  box-shadow: 0 0 0 0.2rem rgba(31, 59, 143, 0.2);
+}
+
+.form-check-input:checked {
+  background-color: var(--azul);
+  border-color: var(--azul);
+}
+
+.pie {
+  background-color: #1b1b1b;
+  color: var(--blanco);
+  padding: 20px 0;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  h2 {
+    font-size: 2.4rem;
+  }
+
+  .portada {
+    padding: 150px 0;
+  }
+
+  .portada h1 {
+    font-size: 3.8rem;
+  }
+}
