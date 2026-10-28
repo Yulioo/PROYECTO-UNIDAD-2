@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entrenamiento | Corriendo por salud</title>
+  <link rel="icon" href="../img/favicon.svg" type="image/svg+xml">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="../css/estilos.css?v=7">
+</head>
+<body>
+
+  <header>
+    <nav class="navbar navbar-expand-lg menu" data-bs-theme="dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html"><i class="fa-solid fa-heart-pulse"></i> Corriendo por salud</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="entrenamiento.html">Entrenamiento</a></li>
+            <li class="nav-item"><a class="nav-link" href="carreras.html">Carreras</a></li>
+            <li class="nav-item"><a class="nav-link" href="consejos.html">Consejos</a></li>
+          </ul>
+          <a class="btn btn-rojo ms-lg-3 my-2 my-lg-0" href="inscripcion.html">Inscríbete</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <section class="encabezado encabezado-entrenamiento">
+      <div class="container">
+        <h1>Entrenamiento</h1>
+        <p class="mb-0">Una semana de ejemplo para cada nivel.</p>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <div class="container">
+        <h2 class="mb-3">Planes semanales</h2>
+
+        <ul class="nav nav-tabs mb-3" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button class="nav-link active" data-bs-toggle="tab" data-bs-target="#principiante" type="button" role="tab">Principiante</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#intermedio" type="button" role="tab">Intermedio</button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button class="nav-link" data-bs-toggle="tab" data-bs-target="#avanzado" type="button" role="tab">Avanzado</button>
+          </li>
+        </ul>
+
+        <div class="tab-content">
+          <div class="tab-pane show active" id="principiante" role="tabpanel">
+            <div class="table-responsive">
+              <table class="table table-striped">
+                <thead>
+                  <tr><th>Día</th><th>Entrenamiento</th><th>Tiempo</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Lunes</td><td>Descanso</td><td>-</td></tr>
+                  <tr><td>Martes</td><td>2 min corriendo y 1 min caminando</td><td>25 min</td></tr>
+                  <tr><td>Miércoles</td><td>Caminata rápida</td><td>30 min</td></tr>
+                  <tr><td>Jueves</td><td>3 min corriendo y 1 min caminando</td><td>28 min</td></tr>
+                  <tr><td>Viernes</td><td>Sentadillas y plancha</td><td>20 min</td></tr>
+                  <tr><td>Sábado</td><td>Descanso</td><td>-</td></tr>
+                  <tr><td>Domingo</td><td>Trote suave</td><td>20 min</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="tab-pane" id="intermedio" role="tabpanel">
+            <div class="table-responsive">
+              <table class="table table-striped">
+                <thead>
+                  <tr><th>Día</th><th>Entrenamiento</th><th>Tiempo</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Lunes</td><td>Descanso</td><td>-</td></tr>
+                  <tr><td>Martes</td><td>Series: 6 x 400 m rápido</td><td>45 min</td></tr>
+                  <tr><td>Miércoles</td><td>Trote suave</td><td>40 min</td></tr>
+                  <tr><td>Jueves</td><td>Cuestas: 8 subidas</td><td>40 min</td></tr>
+                  <tr><td>Viernes</td><td>Ejercicios de fuerza</td><td>30 min</td></tr>
+                  <tr><td>Sábado</td><td>Trote muy suave</td><td>25 min</td></tr>
+                  <tr><td>Domingo</td><td>Tirada larga</td><td>70 min</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+
+          <div class="tab-pane" id="avanzado" role="tabpanel">
+            <div class="table-responsive">
+              <table class="table table-striped">
+                <thead>
+                  <tr><th>Día</th><th>Entrenamiento</th><th>Tiempo</th></tr>
+                </thead>
+                <tbody>
+                  <tr><td>Lunes</td><td>Trote suave</td><td>30 min</td></tr>
+                  <tr><td>Martes</td><td>Series: 5 x 1000 m</td><td>65 min</td></tr>
+                  <tr><td>Miércoles</td><td>Trote suave</td><td>60 min</td></tr>
+                  <tr><td>Jueves</td><td>Ritmo constante rápido</td><td>55 min</td></tr>
+                  <tr><td>Viernes</td><td>Ejercicios de fuerza</td><td>40 min</td></tr>
+                  <tr><td>Sábado</td><td>Cambios de ritmo</td><td>45 min</td></tr>
+                  <tr><td>Domingo</td><td>Tirada larga</td><td>110 min</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion fondo-gris">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6 mb-4 mb-md-0">
+            <h2>¿Qué tan rápido correr?</h2>
+            <p>Casi todos tus entrenamientos deben ser suaves. Una forma fácil de saberlo es la prueba de la plática:</p>
+            <ul>
+              <li><strong>Suave:</strong> puedes platicar sin problema.</li>
+              <li><strong>Medio:</strong> solo puedes decir frases cortas.</li>
+              <li><strong>Fuerte:</strong> no puedes hablar.</li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6">
+            <img src="../img/corredor.webp" alt="Hombre corriendo con playera azul junto a una pared de concreto" class="foto">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-6 mb-4 mb-md-0">
+            <h2>Técnica al correr</h2>
+            <ul class="mb-0">
+              <li>Mantén la espalda derecha y la mirada al frente.</li>
+              <li>Mueve los brazos hacia adelante y atrás, no cruzados.</li>
+              <li>Da pasos cortos y apoya el pie debajo de tu cuerpo.</li>
+              <li>Respira por la nariz y la boca al mismo tiempo.</li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6">
+            <img src="../img/tecnica.jpg" alt="Dibujo de las fases de la zancada de una corredora" class="foto">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion fondo-gris">
+      <div class="container">
+        <h2 class="mb-4">Tipos de entrenamiento</h2>
+        <div class="row">
+          <div class="col-12 col-md-6 mb-3">
+            <article>
+              <h3 class="h5 texto-rojo">Trote suave</h3>
+              <p>Correr cómodo y sin prisa. Es la base de todo el plan.</p>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 mb-3">
+            <article>
+              <h3 class="h5 texto-rojo">Series</h3>
+              <p>Tramos cortos y rápidos con descanso entre cada uno.</p>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 mb-3">
+            <article>
+              <h3 class="h5 texto-rojo">Cuestas</h3>
+              <p>Subidas cortas para tener piernas más fuertes.</p>
+            </article>
+          </div>
+          <div class="col-12 col-md-6 mb-3">
+            <article>
+              <h3 class="h5 texto-rojo">Tirada larga</h3>
+              <p>La salida más larga de la semana, siempre a ritmo suave.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="pie">
+    <div class="container">
+      <p class="mb-0">© 2026 Corriendo por salud</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
